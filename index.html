@@ -1,131 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather Cards</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Weather Application</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="cards-container">
-
+  
     <div class="card">
       <h1 class="title">Check City Weather</h1>
       <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" alt="search" /></button>
+        <input type="text" placeholder="Meerut" spellcheck="false">
+        <button><img src="images/search.png"></button>
       </div>
-      <div class="weather">
-        <img src="images/rain.png" alt="Rain" class="weather-icon" />
-        <h1 class="temp">20°C</h1>
-        <h2 class="city">New York</h2>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather" style="display: block">
+        <img src="images/clear.png" alt="weather icon" class="weather-icon">
+        <h1 class="temp">36°C</h1>
+        <h2 class="city">Meerut</h2>
         <div class="details">
-          <div class="humidity">
-            <img src="images/humidity.png" alt="Humidity Icon" />
-            <p>Humidity: 70%</p>
+          <div class="col">
+            <img src="images/humidity.png" alt="humidity icon">
+            <div>
+              <p class="humidity">32%</p>
+              <p>Humidity</p>
+            </div>
           </div>
-          <div class="wind">
-            <img src="images/wind.png" alt="Wind Icon" />
-            <p>Wind: 15 km/h</p>
+          <div class="col">
+            <img src="images/wind.png" alt="wind icon">
+            <div>
+              <p class="wind">3.84km/h</p>
+              <p>Wind Speed</p>
+            </div>
           </div>
         </div>
       </div>
+    </div><!-- Card 2 -->
+<div class="card">
+  <h1 class="title">Check City Weather</h1>
+  <div class="search">
+    <input type="text" placeholder="Meerut" spellcheck="false">
+    <button><img src="images/search.png"></button>
+  </div>
+  <div class="error">
+    <p>Invalid city name</p>
+  </div>
+  <div class="weather" style="display: block">
+    <img src="images/clouds.png" alt="weather icon" class="weather-icon">
+    <h1 class="temp">36°C</h1>
+    <h2 class="city">Meerut</h2>
+    <div class="details">
+      <div class="col">
+        <img src="images/humidity.png" alt="humidity icon">
+        <div>
+          <p class="humidity">32%</p>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/wind.png" alt="wind icon">
+        <div>
+          <p class="wind">3.84km/h</p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="card">
-      <h1 class="title">Check City Weather</h1>
-      <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" alt="search" /></button>
-      </div>
-      <div class="weather">
-        <img src="images/mist.png" alt="Mist" class="weather-icon" />
-        <h1 class="temp">17°C</h1>
-        <h2 class="city">London</h2>
-        <div class="details">
-          <div class="humidity">
-            <img src="images/humidity.png" alt="Humidity Icon" />
-            <p>Humidity: 85%</p>
-          </div>
-          <div class="wind">
-            <img src="images/wind.png" alt="Wind Icon" />
-            <p>Wind: 12 km/h</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <h1 class="title">Check City Weather</h1>
-      <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" alt="search" /></button>
+<div class="card">
+  <h1 class="title">Check City Weather</h1>
+  <div class="search">
+    <input type="text" placeholder="Meerut" spellcheck="false">
+    <button><img src="images/search.png"></button>
+  </div>
+  <div class="error">
+    <p>Invalid city name</p>
+  </div>
+  <div class="weather" style="display: block">
+    <img src="images/clear.png" alt="weather icon" class="weather-icon">
+    <h1 class="temp">36°C</h1>
+    <h2 class="city">Meerut</h2>
+    <div class="details">
+      <div class="col">
+        <img src="images/humidity.png" alt="humidity icon">
+        <div>
+          <p class="humidity">32%</p>
+          <p>Humidity</p>
+        </div>
       </div>
-      <div class="weather">
-        <img src="images/snow.png" alt="Snow" class="weather-icon" />
-        <h1 class="temp">-5°C</h1>
-        <h2 class="city">Moscow</h2>
-        <div class="details">
-          <div class="humidity">
-            <img src="images/humidity.png" alt="Humidity Icon" />
-            <p>Humidity: 90%</p>
-          </div>
-          <div class="wind">
-            <img src="images/wind.png" alt="Wind Icon" />
-            <p>Wind: 20 km/h</p>
-          </div>
+      <div class="col">
+        <img src="images/wind.png" alt="wind icon">
+        <div>
+          <p class="wind">3.84km/h</p>
+          <p>Wind Speed</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="card">
-      <h1 class="title">Check City Weather</h1>
-      <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" alt="search" /></button>
-      </div>
-      <div class="weather">
-        <img src="images/clouds.png" alt="Cloudy" class="weather-icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">Paris</h2>
-        <div class="details">
-          <div class="humidity">
-            <img src="images/humidity.png" alt="Humidity Icon" />
-            <p>Humidity: 60%</p>
-          </div>
-          <div class="wind">
-            <img src="images/wind.png" alt="Wind Icon" />
-            <p>Wind: 10 km/h</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <h1 class="title">Check City Weather</h1>
-      <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" alt="search" /></button>
+<div class="card">
+  <h1 class="title">Check City Weather</h1>
+  <div class="search">
+    <input type="text" placeholder="Meerut" spellcheck="false">
+    <button><img src="images/search.png"></button>
+  </div>
+  <div class="error">
+    <p>Invalid city name</p>
+  </div>
+  <div class="weather" style="display: block">
+    <img src="images/drizzle.png" alt="weather icon" class="weather-icon">
+    <h1 class="temp">36°C</h1>
+    <h2 class="city">Meerut</h2>
+    <div class="details">
+      <div class="col">
+        <img src="images/humidity.png" alt="humidity icon">
+        <div>
+          <p class="humidity">32%</p>
+          <p>Humidity</p>
+        </div>
       </div>
-      <div class="weather">
-        <img src="images/mist.png" alt="Sunny" class="weather-icon" />
-        <h1 class="temp">30°C</h1>
-        <h2 class="city">Los Angeles </h2>
-        <div class="details">
-          <div class="humidity">
-            <img src="images/humidity.png" alt="Humidity Icon" />
-            <p>Humidity: 50%</p>
-          </div>
-          <div class="wind">
-            <img src="images/wind.png" alt="Wind Icon" />
-            <p>Wind: 8 km/h</p>
-          </div>
+      <div class="col">
+        <img src="images/wind.png" alt="wind icon">
+        <div>
+          <p class="wind">3.84km/h</p>
+          <p>Wind Speed</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <h1 class="title">Check City Weather</h1>
+  <div class="search">
+    <input type="text" placeholder="Meerut" spellcheck="false">
+    <button><img src="images/search.png"></button>
+  </div>
+  <div class="error">
+    <p>Invalid city name</p>
+  </div>
+  <div class="weather" style="display: block">
+    <img src="images/rain.png" alt="weather icon" class="weather-icon">
+    <h1 class="temp">36°C</h1>
+    <h2 class="city">Meerut</h2>
+    <div class="details">
+      <div class="col">
+        <img src="images/humidity.png" alt="humidity icon">
+        <div>
+          <p class="humidity">32%</p>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/wind.png" alt="wind icon">
+        <div>
+          <p class="wind">3.84km/h</p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <h1 class="title">Check City Weather</h1>
+  <div class="search">
+    <input type="text" placeholder="Meerut" spellcheck="false">
+    <button><img src="images/search.png"></button>
+  </div>
+  <div class="error">
+    <p>Invalid city name</p>
+  </div>
+  <div class="weather" style="display: block">
+    <img src="images/snow.png" alt="weather icon" class="weather-icon">
+    <h1 class="temp">36°C</h1>
+    <h2 class="city">Meerut</h2>
+    <div class="details">
+      <div class="col">
+        <img src="images/humidity.png" alt="humidity icon">
+        <div>
+          <p class="humidity">32%</p>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/wind.png" alt="wind icon">
+        <div>
+          <p class="wind">3.84km/h</p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
-
 </body>
 </html>
