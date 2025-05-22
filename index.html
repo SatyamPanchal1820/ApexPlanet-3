@@ -18,7 +18,7 @@
     </div>
   </div>
 
-  <!-- Cards will be dynamically added here -->
+
   <div class="cards-container"></div>
 
   <script>
@@ -39,7 +39,7 @@ async function checkWeather(city) {
     const data = await response.json();
 
     const weatherMain = data.weather[0].main;
-    let weatherImage = "images/wind.png"; // default
+    let weatherImage = "images/wind.png"; 
     if (weatherMain === "Clouds") weatherImage = "images/clouds.png";
     else if (weatherMain === "Clear") weatherImage = "images/clear.png";
     else if (weatherMain === "Rain") weatherImage = "images/rain.png";
@@ -47,7 +47,7 @@ async function checkWeather(city) {
     else if (weatherMain === "Mist") weatherImage = "images/mist.png";
     else if (weatherMain === "Snow") weatherImage = "images/snow.png";
 
-    // Create a new card dynamically
+  
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -73,7 +73,6 @@ async function checkWeather(city) {
       </div>
     `;
 
-    // Add card to container
     cardsContainer.appendChild(card);
   }
 }
